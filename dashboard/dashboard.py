@@ -6,7 +6,7 @@ import plotly.express as px
 st.set_page_config(page_title="HR Employee Retention Dashboard", layout="wide")
 
 # Load Data
-df = pd.read_csv(r'C:\C:\Users\HP\OneDrive\Dokumen\dicoding\expert\test\data\employee_data.csv')
+df = pd.read_csv('data/employee_data.csv')
 
 st.title("📊 HR Analytics Dashboard")
 st.markdown("Dashboard ini menganalisis faktor utama penyebab karyawan keluar (Attrition).")
