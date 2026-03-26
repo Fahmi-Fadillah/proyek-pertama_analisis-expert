@@ -186,7 +186,7 @@ def main():
         prediction(output)
 
     year_now = datetime.date.today().year
-    year = year_now if year_now == 2024 else f'2024 - {year_now}'
+    year = year_now if year_now == 2026 else f'2026 - {year_now}'
     name = "[Fahmi Fadillah](https://www.linkedin.com/in/fahmi-fadillah-651970309/ 'Fahmi Fadillah | LinkedIn')"
     copyright = 'Copyright © ' + str(year) + ' ' + name
     st.caption(copyright)
