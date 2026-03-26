@@ -187,7 +187,7 @@ def main():
 
     year_now = datetime.date.today().year
     year = year_now if year_now == 2024 else f'2024 - {year_now}'
-    name = "[Andrew Benedictus Jamesie](http://linkedin.com/in/andrewbjamesie 'Andrew Benedictus Jamesie | LinkedIn')"
+    name = "[Fahmi Fadillah](https://www.linkedin.com/in/fahmi-fadillah-651970309/ 'Fahmi Fadillah | LinkedIn')"
     copyright = 'Copyright © ' + str(year) + ' ' + name
     st.caption(copyright)
 
