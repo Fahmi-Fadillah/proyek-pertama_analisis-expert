@@ -6,7 +6,7 @@ from sklearn.preprocessing import LabelEncoder, MinMaxScaler
 import os
 
 def data_preprocessing(data_input):
-    df = pd.read_csv('employee_data.csv')
+    df = pd.read_csv('employee_data_cleaned.csv')
     df = df.drop(columns=['EmployeeId', 'Attrition'], axis=1)
     df = pd.concat([df, data_input])
     
@@ -184,7 +184,7 @@ def main():
         data_input = data_preprocessing(df)
         output = model_predict(data_input)
         prediction(output)
-
+        
     year_now = datetime.date.today().year
     year = year_now if year_now == 2026 else f'2026 - {year_now}'
     name = "[Fahmi Fadillah](https://www.linkedin.com/in/fahmi-fadillah-651970309/ 'Fahmi Fadillah | LinkedIn')"
