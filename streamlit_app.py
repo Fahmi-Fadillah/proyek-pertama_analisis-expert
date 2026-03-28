@@ -23,7 +23,7 @@ def model_predict(df):
     return model.predict(df)
 
 def main():
-    st.title('Jaya Jaya Maju Employee Attrition Prediction')
+    st.title('Permasalah Human Resource Dashboard')
 
     with st.container():
         col_gender, col_age, col_marital = st.columns(3)
