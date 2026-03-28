@@ -52,9 +52,9 @@ And to stop the streamlit application program by `ctrl + c`.
 
 ## Business Dashboard
 
-[Jaya Jaya Maju Employees Dashboard](https://public.tableau.com/views/JayaJayaMajuEmployeesDashboard/Attrition 'Tableau Public- Jaya Jaya Maju Employees Dashboard'), didesain sefektif mungkin untuk memberikan insight kepada para manajer departemen HR terkait attrition rate yang cukup tinggi hingga lebih dari 10%. Dashboard ini juga didesain dengan visualisasi dan pemilihan warna yang inklusif bagi penderita color blind.
+[Permasalahan Human Resources Dashboard](https://public.tableau.com/views/Tableau_17746866269460/Attrition?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link 'Tableau Public- Permasalahan Human Resources'), didesain sefektif mungkin untuk memberikan insight kepada para manajer departemen HR terkait attrition rate yang cukup tinggi hingga lebih dari 10%. Dashboard ini juga didesain dengan visualisasi dan pemilihan warna yang inklusif bagi penderita color blind.
 
-![Jaya Jaya Maju Employees Dashboard](https://github.com/user-attachments/assets/0b6e67e1-8f07-48fd-b024-a4eb207dee55 'Jaya Jaya Maju Employees Dashboard')
+![Permasalahan Human Resources Dashboard](https://github.com/Fahmi-Fadillah/proyek-pertama_analisis-expert/blob/main/tableau%20dashboard.png 'Permasalahan Human Resources Dashboard')
 
 Pada dashboard ini, terdapat 3 kolom, kolom pertama menunjukkan analisis dari distribusi jenis kelamin, status pernikahan, dan tingkat pendidikan yang telah ditempuh para pegawai. Pada kolom kedua menunjukkan grafik analisis attrition rate berdasarkan umur, peran pekerjaan dan keterlibatan pekerjaan. Sedangkan pada kolom ketiga terdapat jumlah attrition rate, rata-rata jumlah tahun berkerja setiap pegawai, rata-rata pendapatan pegawai, dan bubble chart jumlah attrition rate berdasarkan tingkat work life balance dan tingkat kepuasan kerja.
 
@@ -90,4 +90,4 @@ Berikut beberapa rekomendai yang dapat dilakukan oleh perusahaan untuk mengatasi
 - Fokus pada peningkatan kepuasan kerja dengan memberikan lebih banyak umpan balik positif, pengakuan atas pencapaian, serta peluang untuk meningkatkan kesejahteraan karyawan.
 - Mengingat attrition rate yang tinggi di usia 19-30 tahun, perusahaan bisa membuat program khusus untuk mempertahankan karyawan muda, seperti mentorship, peluang pengembangan karier cepat, atau pengakuan atas kontribusi mereka.
 - Lakukan pemantauan berkelanjutan terhadap attrition rate dan lakukan deep analysis untuk mengidentifikasi trend dan faktor-faktor risiko lebih dini. Hal ini akan memungkinkan perusahaan untuk mengantisipasi potensi masalah dan mengambil tindakan preventif.
-- Prediksi apakah pekerja memiliki kemungkinan untuk melakukan attrition, dapat dilakukan melalui website prediksi [berikut ini](https://employee-attrition-predict.streamlit.app 'Jaya Jaya Maju Employee Attrition Prediction').
+- Prediksi apakah pekerja memiliki kemungkinan untuk melakukan attrition, dapat dilakukan melalui website prediksi [berikut ini](https://expert-dicoding.streamlit.app/ 'Permasalahan Human Resources Attrition Prediction').
