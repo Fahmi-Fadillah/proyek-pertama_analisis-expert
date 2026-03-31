@@ -6,17 +6,17 @@ from sklearn.preprocessing import LabelEncoder, MinMaxScaler
 import os
 
 def data_preprocessing(data_input):
-df = pd.read_csv('employee_data_cleaned.csv')
-df = df.drop(columns=['EmployeeId', 'Attrition'], axis=1)
-df = pd.concat([df, data_input])
-
-numerical = df.select_dtypes(exclude='object').columns.tolist()
-categorical = df.select_dtypes(include='object').columns.tolist()
-
-df[categorical] = df[categorical].apply(LabelEncoder().fit_transform)
-df[numerical] = MinMaxScaler().fit_transform(df[numerical])
-
-return df.tail(1).to_numpy()
+    df = pd.read_csv('employee_data_cleaned.csv')
+    df = df.drop(columns=['EmployeeId', 'Attrition'], axis=1)
+    df = pd.concat([df, data_input])
+    
+    numerical = df.select_dtypes(exclude='object').columns.tolist()
+    categorical = df.select_dtypes(include='object').columns.tolist()
+    
+    df[categorical] = df[categorical].apply(LabelEncoder().fit_transform)
+    df[numerical] = MinMaxScaler().fit_transform(df[numerical])
+    
+    return df.tail(1).to_numpy()
 
 def model_predict(df):
 model = joblib.load('model_gb.joblib')
