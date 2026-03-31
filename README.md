@@ -70,7 +70,7 @@ Pada dashboard ini, terdapat 3 kolom, kolom pertama menunjukkan analisis dari di
 > Dari **grafik kepuasan kerja**, pekerja yang memiliki attrition rate tertinggi juga datang dari pekerja dengan tingkat kepuasan kerja yang rendah, yaitu sebesar 22.4% dengan 46 pekerja yang melakukan attrition dan 159 pekerja yang tidak melakukannya. Sedangkan pekerja dengan tingkat kepuasan kerja paling tinggi adalah pekerja dengan tingkat attrition paling rendah, yaitu 11.47%, sebesar 39 pekerja yang melakukan attrition dan 301 pekerja yang tidak.  
 
 > [!NOTE]
-> Video singkat penjelasan business dashboard dan kesimpulannya dapat dilihat pada [link YouTube ini](link nyusul 'Submission Pertama: Menyelesaikan Permasalahan Human Resources').
+> Video singkat penjelasan business dashboard dan kesimpulannya dapat dilihat pada [link YouTube ini](https://youtu.be/xS8VlcyGqK0 'Submission Pertama: Menyelesaikan Permasalahan Human Resources').
 
 ## Conclusion
 
