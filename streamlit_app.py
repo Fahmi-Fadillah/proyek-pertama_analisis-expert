@@ -174,11 +174,11 @@ def main():
         'YearsWithCurrManager'])
 
     @st.dialog('Prediction Result')
-    def prediction(output):
-        if output == 1:
-            st.subheader('Status Attrition: Yes', divider='red')
-        else:
-            st.subheader('Status Attrition: No', divider='green')
+   def prediction(output):
+    if output == 1:
+        st.error('Status Attrition: Yes')
+    else:
+        st.success('Status Attrition: No')
     
     if st.button('✨ Predict'):
         data_input = data_preprocessing(df)
