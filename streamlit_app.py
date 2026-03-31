@@ -162,23 +162,27 @@ def main():
         years_at_company, years_in_current_role, years_since_last_promotion,
         years_with_curr_manager]]
 
-    df = pd.DataFrame(data, columns=[
-        'Age', 'BusinessTravel', 'DailyRate', 'Department', 'DistanceFromHome',
-        'Education', 'EducationField', 'EnvironmentSatisfaction', 'Gender',
-        'HourlyRate', 'JobInvolvement', 'JobLevel', 'JobRole', 'JobSatisfaction',
-        'MaritalStatus', 'MonthlyIncome', 'MonthlyRate', 'NumCompaniesWorked',
-        'OverTime', 'PercentSalaryHike', 'PerformanceRating',
-        'RelationshipSatisfaction', 'StandardHours', 'StockOptionLevel',
-        'TotalWorkingYears', 'TrainingTimesLastYear', 'WorkLifeBalance',
-        'YearsAtCompany', 'YearsInCurrentRole', 'YearsSinceLastPromotion',
-        'YearsWithCurrManager'])
+   df = pd.DataFrame(data, columns=[
+    'Age', 'BusinessTravel', 'DailyRate', 'Department', 'DistanceFromHome',
+    'Education', 'EducationField', 'EnvironmentSatisfaction', 'Gender',
+    'HourlyRate', 'JobInvolvement', 'JobLevel', 'JobRole', 'JobSatisfaction',
+    'MaritalStatus', 'MonthlyIncome', 'MonthlyRate', 'NumCompaniesWorked',
+    'OverTime', 'PercentSalaryHike', 'PerformanceRating',
+    'RelationshipSatisfaction', 'StandardHours', 'StockOptionLevel',
+    'TotalWorkingYears', 'TrainingTimesLastYear', 'WorkLifeBalance',
+    'YearsAtCompany', 'YearsInCurrentRole', 'YearsSinceLastPromotion',
+    'YearsWithCurrManager'])
 
-    @st.dialog('Prediction Result')
-   def prediction(output):
+def prediction(output):
     if output == 1:
-        st.error('Status Attrition: Yes')
+        st.subheader('Status Attrition: Yes', divider='red')
     else:
-        st.success('Status Attrition: No')
+        st.subheader('Status Attrition: No', divider='green')
+
+if st.button('✨ Predict'):
+    data_input = data_preprocessing(df)
+    output = model_predict(data_input)
+    prediction(output)
     
     if st.button('✨ Predict'):
         data_input = data_preprocessing(df)
