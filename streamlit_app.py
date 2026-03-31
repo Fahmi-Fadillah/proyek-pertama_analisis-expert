@@ -173,17 +173,16 @@ def main():
         'YearsAtCompany', 'YearsInCurrentRole', 'YearsSinceLastPromotion',
         'YearsWithCurrManager'])
 
-    @st.dialog('Prediction Result')
     def prediction(output):
-        if output == 1:
-            st.subheader('Status Attrition: Yes', divider='red')
-        else:
-            st.subheader('Status Attrition: No', divider='green')
+    if output == 1:
+        st.error('Status Attrition: Yes')
+    else:
+        st.success('Status Attrition: No')
     
     if st.button('✨ Predict'):
         data_input = data_preprocessing(df)
         output = model_predict(data_input)
-        prediction(output)
+prediction(output[0])
         
     year_now = datetime.date.today().year
     year = year_now if year_now == 2026 else f'2026 - {year_now}'
